@@ -1,0 +1,202 @@
+/* styles.css */
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #1e3793;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 2em;
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+    display: inline;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-inline-start: auto;
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 80rem; /* Default padding to adjust for header height */
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="date"], input[type="email"], select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Utility Classes */
+.hidden {
+    /* display: none; */
+}
+
+#flights-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flight-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.flight-actions button {
+    margin-left: 10px;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.flight-actions button:hover {
+    background-color: #d32f2f;
+}
+
+/* Padding and Margin Classes */
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.margin-20 {
+    margin: 20px;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 80px; /* Default padding to adjust for header height */
+    text-align: center;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 80px; /* Default padding to adjust for header height */
+    text-align: center;
+}
+.main-margin-large{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 80px; /* Default padding to adjust for header height */
+    text-align: center;
+}
+.index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 115rem; /* Default padding to adjust for header height */
+    text-align: center;
+}
+.signUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 80px; /* Default padding to adjust for header height */
+    text-align: center;
+}
+.changepassword{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 80px; /* Default padding to adjust for header height */
+    text-align: center;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Booking System - Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Airline Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="user.html">User Interface</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Manage Flights</h2>
+            <!-- Form for adding flights -->
+            <form id="add-flight-form">
+                <div>
+                    <label for="airlines-name">Airlines Name:</label>
+                    <input type="text" id="airlines-name" name="airlines-name" required>
+                </div>
+                <div>
+                    <label for="airlines-no">Airlines No:</label>
+                    <input type="text" id="airlines-no" name="airlines-no" required>
+                </div>
+                <div>
+                    <label for="from-city">From City:</label>
+                    <input type="text" id="from-city" name="from-city" required>
+                </div>
+                <div>
+                    <label for="departure-time">Departure Time:</label>
+                    <input type="text" id="departure-time" name="departure-time" required>
+                </div>
+                <div>
+                    <label for="to-city">To City:</label>
+                    <input type="text" id="to-city" name="to-city" required>
+                </div>
+                <div>
+                    <label for="arrival-time">Arrival Time:</label>
+                    <input type="text" id="arrival-time" name="arrival-time" required>
+                </div>
+                <div>
+                    <label for="travel-time">Travel Time:</label>
+                    <input type="text" id="travel-time" name="travel-time" required>
+                </div>
+                <div>
+                    <label for="total-distance">Total Distance:</label>
+                    <input type="number" id="total-distance" name="total-distance" required>
+                </div>
+                <button type="submit">Add Flight</button>
+            </form>
+
+            <!-- Form for updating flights -->
+            <form id="update-flight-form hidden" class="hidden">
+                <h3>Update Flight</h3>
+                <div>
+                    <label for="update-airlines-name">Airlines Name:</label>
+                    <input type="text" id="update-airlines-name" name="airlines-name" required>
+                </div>
+                <div>
+                    <label for="update-airlines-no">Airlines No:</label>
+                    <input type="text" id="update-airlines-no" name="airlines-no" required>
+                </div>
+                <div>
+                    <label for="update-from-city">From City:</label>
+                    <input type="text" id="update-from-city" name="from-city" required>
+                </div>
+                <div>
+                    <label for="update-departure-time">Departure Time:</label>
+                    <input type="text" id="update-departure-time" name="departure-time" required>
+                </div>
+                <div>
+                    <label for="update-to-city">To City:</label>
+                    <input type="text" id="update-to-city" name="to-city" required>
+                </div>
+                <div>
+                    <label for="update-arrival-time">Arrival Time:</label>
+                    <input type="text" id="update-arrival-time" name="arrival-time" required>
+                </div>
+                <div>
+                    <label for="update-travel-time">Travel Time:</label>
+                    <input type="text" id="update-travel-time" name="travel-time" required>
+                </div>
+                <div>
+                    <label for="update-total-distance">Total Distance:</label>
+                    <input type="number" id="update-total-distance" name="total-distance" required>
+                </div>
+                <button type="submit">Update Flight</button>
+            </form>
+
+            <!-- Section for listing flights with delete and update options -->
+            <section id="flights-list">
+                <h3>Available Flights</h3>
+                <div id="flights-container">
+                    <!-- Flights will be populated here dynamically -->
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
