@@ -251,3 +251,66 @@
 -- SELECT * FROM airlines, booking, route
 -- WHERE route_id = booking_route_id
 -- AND route_airlines_id = airlines_id;
+
+use airline_management;
+alter user 'root'@'localhost' identified with mysql_native_password By 'pw4dummy';
+
+CREATE TABLE users (
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    PRIMARY KEY (email),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+select * from booking;
+select * from users;
+drop table users;
+drop table booking;
+
+CREATE TABLE booking (
+     booking_id INT(11) NOT NULL AUTO_INCREMENT,
+     email VARCHAR(255) NOT NULL,
+     beginning  VARCHAR(255) NOT NULL,
+    destination VARCHAR(255) NOT NULL,
+     
+    journey_date VARCHAR(255) NOT NULL,
+    seat_type VARCHAR(255) NOT NULL,
+    
+    PRIMARY KEY (booking_id)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+show databases;
+
+GRANT ALL PRIVILEGES ON your_database_name.* TO 'your_user'@'localhost';
+FLUSH PRIVILEGES;
+use airline_management;
+
+select * from booking;
+
+select * from airline;
+CREATE TABLE Flights (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    airlines_name VARCHAR(100) NOT NULL,
+    airlines_no VARCHAR(10) NOT NULL UNIQUE,
+    from_city VARCHAR(50) NOT NULL,
+    departure_time TIME NOT NULL,
+    to_city VARCHAR(50) NOT NULL,
+    arrival_time TIME NOT NULL,
+    travel_time INT NOT NULL, -- Travel time in minutes
+    total_distance INT NOT NULL -- Distance in kilometers
+);
+
+CREATE TABLE Admin (
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    PRIMARY KEY (email),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+select * from Flights;
+INSERT INTO Admin (name, email, password) VALUES
+    ('Admin 1', 'admin1@example.com', 'password1'),
+    ('Admin 2', 'admin2@example.com', 'password2');
+    
+select * from users;
+select * from Admin;
